@@ -15,7 +15,7 @@ using Twilio.Types;
 /**
  * Basic Azure Function illustrating one small example of what can be done when on-premises file data is copied in near real-time to Azure Blob Storage in an open format.
  * This code requires several Azure resources be set up ahead of time. All necessary resources can be created and queried through the Azure Cloud Shell, 
- * using AZ bash commands that are outlined at: https://github.com/mmarsala/peerblobfunc1
+ * using AZ bash commands that are outlined at: https://github.com/mmarsala/azure-function-examples/tree/master/FaceDetect1
  *
  * Once all Azure Cloud Shell CLI calls are successfully run, there should be no need to modify the C# code below. 
  * Error handling is limited so following the guide at the GitHub link above is crucial to the successful execution of this eaxmple.
