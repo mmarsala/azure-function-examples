@@ -70,5 +70,5 @@ Note: This command will take a few moments to run as it downloads several files 
 
 14. Open up the list of Functions, the select the desired function (i.e. FaceDetect1) to view it's run.csx file and to expand the Logs section underneath the code. We will use this view to verify that the function is operating correctly.
 
-##Disclaimer
+## Disclaimer
 This repository does not represent an official repository for Peer Software or Microsoft. All code and information in this repository is provided as is.

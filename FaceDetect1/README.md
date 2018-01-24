@@ -23,17 +23,16 @@ d.	Log out if any match is discovered with a confidence level greater than 50%.
 
 Note: If the Azure Function does not trigger (no information is displayed in this Logs section), double check the values that were entered into the Cloud Shell during Step #11 of the Setup Guide. If a space or extra character is entered for either BlobContainerName or CogSvcsKey, the function will fail to run properly. Re-running the command in Step #11 of the Setup Guide with the correct information should fix the problem. Once that is done, use Storage Explorer or another tool to copy the existing jpg of Satya or upload a new one.
 
-##Enabling Twilio Support
+## Enabling Twilio Support
 Twilio capabilities for sending SMS messages are already built into this sample Azure Function. If you would like to have the function send an SMS message when Satya is found in an image, you can do so by running the following Cloud Shell command to set several additional Function App variables. Four total variables are needed from Twilio, in addition to replacing <UNIQUENAME> with the storage account name chosen in Step #5 of the Setup Guide.
 
 *<TWILIOACCOUNTSID> should be replaced with the Account SID that Twilio gives when you set up a new account. It should look something like: DebA341a1036553417802b8482ab944536
 *<TWILIOAUTHTOKEN> is the authentication token that Twilio also gives you when you set up a new account. It should look something like this: 567222da7cb3643f21c1ca37cc4e951b
 *<TWILIOFROMNUMBER> is the number from which Twilio will send the SMS. This is configured through your Twilio account. For a US-based number it should look something like this: +17037773344
 *<TWILIOTONUMBER> is the number that will receive the SMS alert. This should be your cell phone. For a US-based number it should look something like this: +17037773344
-
 ```
 az functionapp config appsettings set --resource-group hybrid-storage-lab-jan18 -name <UNIQUENAME> --settings "TwilioAccountSid=<TWILIOACCOUNTSID>", "TwilioAuthToken=<TWILIOAUTHTOKEN>", "TwilioFromNumber=<TWILIOFROMNUMBER>", "TwilioToNumber=<TWILIOTONUMBER>"
 ```
 
-##Disclaimer
+## Disclaimer
 This repository does not represent an official repository for Peer Software or Microsoft. All code and information in this repository is provided as is.
