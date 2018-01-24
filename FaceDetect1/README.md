@@ -39,7 +39,7 @@ Twilio capabilities for sending SMS messages are already built into this sample 
 * `<TWILIOFROMNUMBER>` is the number from which Twilio will send the SMS. This is configured through your Twilio account. For a US-based number it should look something like this: +17037773344
 * `<TWILIOTONUMBER>` is the number that will receive the SMS alert. This should be your cell phone. For a US-based number it should look something like this: +17037773344
 ```
-az functionapp config appsettings set --resource-group azure-function-examples-rg -name <UNIQUENAME> --settings "TwilioAccountSid=<TWILIOACCOUNTSID>", "TwilioAuthToken=<TWILIOAUTHTOKEN>", "TwilioFromNumber=<TWILIOFROMNUMBER>", "TwilioToNumber=<TWILIOTONUMBER>"
+az functionapp config appsettings set --resource-group azure-function-examples-rg --name <UNIQUENAME> --settings "TwilioAccountSid=<TWILIOACCOUNTSID>" "TwilioAuthToken=<TWILIOAUTHTOKEN>" "TwilioFromNumber=<TWILIOFROMNUMBER>" "TwilioToNumber=<TWILIOTONUMBER>"
 ```
 
 
